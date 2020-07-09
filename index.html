@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat Application</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="app-container">
+            <div class="left-side shared-features-in-both-sides">
+                <div class="widget">
+                    <div
+                        id="countries-chart"
+                        class="countries-chart"
+                        draggable="true"
+                        ondragstart="dragStart(event)"
+                    ></div>
+                </div>
+                <div class="widget">
+                    <div
+                        id="radar-chart"
+                        class="radar-chart"
+                        draggable="true"
+                        ondragstart="dragStart(event)"
+                    ></div>
+                </div>
+                <div class="widget">
+                    <div
+                        id="chord-diagram"
+                        class="chord-diagram"
+                        draggable="true"
+                        ondragstart="dragStart(event)"
+                    ></div>
+                </div>
+            </div>
+            <div class="right-side shared-features-in-both-sides">
+                <div id="top-part" class="top-part">
+                    <div
+                        class="dashboard-slot dashed-border blue-icon-container one"
+                        id="dashboard-slot"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+
+                    >
+                    </div>
+                    <div
+                        class="dashboard-slot dashed-border blue-icon-container two"
+                        id="dashboard-slot"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+
+                    >
+                    </div>
+                    <div
+                        class="dashboard-slot dashed-border blue-icon-container three"
+                        id="dashboard-slot"
+                        ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+
+                    >
+                    </div>
+                </div>
+                <!-- <div class="button-part">
+                    <div class="button-container"> -->
+                        <button
+                            class="save-button button-shared button-save"
+                            id="save-button"
+                        >
+                            Save Layout
+                        </button>
+                        <a
+                            href="README.txt"
+                            target="_blank"
+                            class="details-button button-shared button-details"
+                            id="save-button"
+                            >Task Details</a
+                        >
+                    <!-- </div>
+                </div> -->
+            </div>
+        </div>
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/spiritedaway.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        <script src="countries-chart.js"></script>
+        <script src="radar-chart.js"></script>
+        <script src="chord-diagram.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

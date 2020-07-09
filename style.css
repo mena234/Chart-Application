@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+.app-container {
+    display: flex;
+    height: 100%;
+}
+
+.shared-features-in-both-sides {
+    height: inherit;
+    padding: 30px 20px;
+}
+
+.left-side {
+    width: 25%;
+    background-color: white;
+    margin-right: 5%;
+}
+
+.right-side {
+    width: 70%;
+}
+
+.right-side .top-part {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.right-side .button-part {
+    position: fixed;
+}
+
+.dashboard-slot {
+    width: 400px;
+    height: 300px;
+    margin: 20px 10px;
+    resize: both;
+    overflow: auto;
+    position: absolute;
+}
+
+.one {
+    top: 0;
+    left: 0;
+}
+
+.two {
+    top: 0;
+    left: 500px;
+}
+
+.three {
+    top: 360px;
+    left:0;
+}
+
+.widget {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.countries-chart {
+    height: 100%;
+    width: 100%;
+}
+
+.dashed-border {
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+}
+
+.shadow-box {
+    box-shadow: 5px 5px 10px lightblue, -5px -5px 10px lightblue;
+}
+
+.blue-icon-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f055";
+    font-size: 40px;
+    color: gray;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.button-container {
+    width: 80%;
+    margin: auto;
+}
+
+.button-shared {
+    background-color: #0069D9;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.save-button {
+    float: right;
+}
+
+.details-button {
+    float: left;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.button-save {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.button-details {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
